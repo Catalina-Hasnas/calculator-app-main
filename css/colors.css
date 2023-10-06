@@ -1,0 +1,117 @@
+* {
+  /* Default theme */
+  --main-background-default: hsl(222, 26%, 31%);
+  --keypad-background-default: hsl(223, 31%, 20%);
+  --screen-background-default: hsl(224, 36%, 15%);
+  --key1-background-default: hsl(225, 21%, 49%);
+  --key1-shadow-default: hsl(224, 28%, 35%);
+  --key2-background-default: hsl(6, 63%, 50%);
+  --key2-shadow-default: hsl(6, 70%, 34%);
+  --key3-background-default: hsl(30, 25%, 89%);
+  --key3-shadow-default: hsl(28, 16%, 65%);
+  --text1-default: hsl(221, 14%, 31%);
+  --text2-default: hsl(0, 0%, 100%);
+
+  /* Light theme */
+  --main-background-light: hsl(0, 0%, 90%);
+  --keypad-background-light: hsl(0, 5%, 81%);
+  --screen-background-light: hsl(0, 0%, 93%);
+  --key1-background-light: hsl(185, 42%, 37%);
+  --key1-shadow-light: hsl(185, 58%, 25%);
+  --key2-background-light: hsl(25, 98%, 40%);
+  --key2-shadow-light: hsl(25, 99%, 27%);
+  --key3-background-light: hsl(45, 7%, 89%);
+  --key3-shadow-light: hsl(35, 11%, 61%);
+  --text1-light: hsl(60, 10%, 19%);
+  --text2-light: hsl(0, 0%, 100%);
+
+  /* Dark theme */
+  --main-background-dark: hsl(268, 75%, 9%);
+  --keypad-background-dark: hsl(268, 71%, 12%);
+  --screen-background-dark: hsl(268, 71%, 12%);
+  --key1-background-dark: hsl(281, 89%, 26%);
+  --key1-shadow-dark: hsl(285, 91%, 52%);
+  --key2-background-dark: hsl(176, 100%, 44%);
+  --key2-shadow-dark: hsl(177, 92%, 70%);
+  --key3-background-dark: hsl(268, 47%, 21%);
+  --key3-shadow-dark: hsl(290, 70%, 36%);
+  --text1-dark: hsl(52, 100%, 62%);
+  --text2-dark: hsl(0, 0%, 100%);
+}
+
+:root {
+  color-scheme: default;
+  --main-background: var(--main-background-default);
+  --keypad-background: var(--keypad-background-default);
+  --screen-background: var(--screen-background-default);
+  --key1-background: var(--key1-background-default);
+  --key1-shadow: var(--key1-shadow-default);
+  --key2-background: var(--key2-background-default);
+  --key2-shadow: var(--key2-shadow-default);
+  --key3-background: var(--key3-background-default);
+  --key3-shadow: var(--key3-shadow-default);
+  --text1: var(--text1-default);
+  --text2: var(--text2-default);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --main-background: var(--main-background-dark);
+    --keypad-background: var(--keypad-background-dark);
+    --screen-background: var(--screen-background-dark);
+    --key1-background: var(--key1-background-dark);
+    --key1-shadow: var(--key1-shadow-dark);
+    --key2-background: var(--key2-background-dark);
+    --key2-shadow: var(--key2-shadow-dark);
+    --key3-background: var(--key3-background-dark);
+    --key3-shadow: var(--key3-shadow-dark);
+    --text1: var(--text1-dark);
+    --text2: var(--text2-dark);
+  }
+}
+
+[color-scheme="default"] {
+  color-scheme: dark;
+  --main-background: var(--main-background-default);
+  --keypad-background: var(--keypad-background-default);
+  --screen-background: var(--screen-background-default);
+  --key1-background: var(--key1-background-default);
+  --key1-shadow: var(--key1-shadow-default);
+  --key2-background: var(--key2-background-default);
+  --key2-shadow: var(--key2-shadow-default);
+  --key3-background: var(--key3-background-default);
+  --key3-shadow: var(--key3-shadow-default);
+  --text1: var(--text1-default);
+  --text2: var(--text2-default);
+}
+
+[color-scheme="light"] {
+  color-scheme: light;
+  --main-background: var(--main-background-light);
+  --keypad-background: var(--keypad-background-light);
+  --screen-background: var(--screen-background-light);
+  --key1-background: var(--key1-background-light);
+  --key1-shadow: var(--key1-shadow-light);
+  --key2-background: var(--key2-background-light);
+  --key2-shadow: var(--key2-shadow-light);
+  --key3-background: var(--key3-background-light);
+  --key3-shadow: var(--key3-shadow-light);
+  --text1: var(--text1-light);
+  --text2: var(--text2-light);
+}
+
+[color-scheme="dark"] {
+  color-scheme: dark;
+  --main-background: var(--main-background-dark);
+  --keypad-background: var(--keypad-background-dark);
+  --screen-background: var(--screen-background-dark);
+  --key1-background: var(--key1-background-dark);
+  --key1-shadow: var(--key1-shadow-dark);
+  --key2-background: var(--key2-background-dark);
+  --key2-shadow: var(--key2-shadow-dark);
+  --key3-background: var(--key3-background-dark);
+  --key3-shadow: var(--key3-shadow-dark);
+  --text1: var(--text1-dark);
+  --text2: var(--text2-dark);
+}
