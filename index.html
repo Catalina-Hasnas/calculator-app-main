@@ -15,8 +15,6 @@
     <link rel="stylesheet" href="css/main.css" />
 
     <title>Frontend Mentor | Calculator app</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
         font-size: 11px;
@@ -28,23 +26,59 @@
     </style>
   </head>
   <body>
-    <form id="theme-switcher">
-      <div>
-        <input checked type="radio" id="default" name="theme" value="default" />
-        <label for="default">Default</label>
+    <main>
+      <div class="container">
+        <div class="calculator">
+          <div class="calculator-header">
+            <h2>calc</h2>
+            <form id="theme-switcher">
+              <label for="default">1</label>
+              <label for="light">2</label>
+              <label for="dark">3</label>
+              <button id="toggler-button">
+                <span id="circle"></span>
+              </button>
+              <input
+                hidden
+                type="radio"
+                id="default"
+                name="theme"
+                value="default"
+              />
+              <input
+                hidden
+                type="radio"
+                id="light"
+                name="theme"
+                value="light"
+              />
+              <input hidden type="radio" id="dark" name="theme" value="dark" />
+            </form>
+          </div>
+          <div class="calculator-screen"><p>123456</p></div>
+          <div class="calculator-body">
+            <button class="regular-button">7</button>
+            <button class="regular-button">8</button>
+            <button class="regular-button">9</button>
+            <button class="blue-button">DEL</button>
+            <button class="regular-button">4</button>
+            <button class="regular-button">5</button>
+            <button class="regular-button">6</button>
+            <button class="regular-button">+</button>
+            <button class="regular-button">1</button>
+            <button class="regular-button">2</button>
+            <button class="regular-button">3</button>
+            <button class="regular-button">-</button>
+            <button class="regular-button">.</button>
+            <button class="regular-button">0</button>
+            <button class="regular-button">/</button>
+            <button class="regular-button">x</button>
+            <button class="bigger-button blue-button">Reset</button>
+            <button id="equals-button" class="bigger-button">=</button>
+          </div>
+        </div>
       </div>
-      <div>
-        <input type="radio" id="light" name="theme" value="light" />
-        <label for="light">Light</label>
-      </div>
-      <div>
-        <input type="radio" id="dark" name="theme" value="dark" />
-        <label for="dark">Dark</label>
-      </div>
-    </form>
-
-    <div class="test"></div>
-
+    </main>
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"

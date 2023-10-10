@@ -1,7 +1,123 @@
 @import "colors.css";
 
-.test {
-  width: 200px;
-  height: 200px;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=League+Spartan:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  line-height: 1;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--main-background);
+}
+
+button {
+  padding: 0.5rem 1.5rem;
+  border: 0;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  font-family: inherit;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.calculator-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calculator-body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1.2rem;
+  background-color: var(--keypad-background);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.calculator-screen {
+  text-align: end;
+  background-color: var(--screen-background);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.calculator-screen p {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.bigger-button {
+  grid-column: span 2;
+}
+
+.regular-button {
+  background-color: var(--key3-background);
+  color: var(--text1);
+  font-size: 2rem;
+  box-shadow: inset 0px -3px var(--key3-shadow);
+}
+
+.blue-button {
+  background-color: var(--key1-background);
+  color: var(--text2);
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  box-shadow: inset 0px -3px var(--key1-shadow);
+}
+
+#equals-button {
+  background-color: var(--key2-background);
+  color: var(--text2);
+  font-size: 1.5rem;
+  box-shadow: inset 0px -3px var(--key2-shadow);
+}
+
+#theme-switcher {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, min-content);
+  grid-row-gap: 0.2rem;
+  place-items: center;
+}
+
+#toggler-button {
+  grid-column: span 3;
+  background-color: var(--keypad-background);
+  padding: 0.8rem 2.5rem;
+  border-radius: 1rem;
+  position: relative;
+}
+
+#circle {
+  background-color: var(--key2-background);
+  border-radius: 10rem;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  padding: 0.5rem;
+  transition: left 200ms;
 }
