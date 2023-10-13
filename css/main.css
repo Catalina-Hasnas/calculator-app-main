@@ -34,6 +34,7 @@ button {
 .container {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
   min-width: 27rem;
 }
 
@@ -107,7 +108,7 @@ button {
 
 #equals-button {
   background-color: var(--key2-background);
-  color: var(--text2);
+  color: var(--key2-text);
   font-size: 1.5rem;
   box-shadow: inset 0px -3px var(--key2-shadow);
 }
@@ -146,4 +147,15 @@ button {
   transform: translate(-50%, -50%);
   padding: 0.5rem;
   transition: left 200ms;
+}
+
+.attribution {
+  font-size: 0.7rem;
+  text-align: center;
+  letter-spacing: 0.05rem;
+}
+
+.attribution a {
+  color: var(--key2-on-hover);
+  text-decoration: none;
 }

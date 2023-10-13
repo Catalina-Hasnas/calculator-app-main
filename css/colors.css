@@ -63,6 +63,7 @@
   --key2-on-hover: var(--key2-on-hover-default);
   --key3-on-hover: var(--key3-on-hover-default);
   --screen-text: var(--text2-default);
+  --key2-text: var(--text2-default);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -83,6 +84,7 @@
     --key2-on-hover: var(--key2-on-hover-dark);
     --key3-on-hover: var(--key3-on-hover-dark);
     --screen-text: var(--text1-dark);
+    --key2-text: var(--text1-light);
   }
 }
 
@@ -103,6 +105,7 @@
   --key2-on-hover: var(--key2-on-hover-default);
   --key3-on-hover: var(--key3-on-hover-default);
   --screen-text: var(--text2-default);
+  --key2-text: var(--text2-default);
 }
 
 [color-scheme="light"] {
@@ -122,6 +125,7 @@
   --key2-on-hover: var(--key2-on-hover-light);
   --key3-on-hover: var(--key3-on-hover-light);
   --screen-text: var(--text1-light);
+  --key2-text: var(--text2-light);
 }
 
 [color-scheme="dark"] {
@@ -141,4 +145,5 @@
   --key2-on-hover: var(--key2-on-hover-dark);
   --key3-on-hover: var(--key3-on-hover-dark);
   --screen-text: var(--text1-dark);
+  --key2-text: var(--text1-light);
 }
