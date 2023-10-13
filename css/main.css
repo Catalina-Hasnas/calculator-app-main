@@ -39,7 +39,7 @@ button {
 
 @media screen and (max-width: 25em) {
   .container {
-    min-width: 19rem;
+    min-width: 20rem;
   }
 }
 
@@ -70,6 +70,7 @@ button {
   padding: 1.5rem;
   border-radius: 0.5rem;
   min-height: 5rem;
+  color: var(--screen-text);
 }
 
 #calculator-screen p {
@@ -88,6 +89,10 @@ button {
   box-shadow: inset 0px -3px var(--key3-shadow);
 }
 
+.regular-button:hover {
+  background-color: var(--key3-on-hover);
+}
+
 .blue-button {
   background-color: var(--key1-background);
   color: var(--text2);
@@ -96,11 +101,19 @@ button {
   box-shadow: inset 0px -3px var(--key1-shadow);
 }
 
+.blue-button:hover {
+  background-color: var(--key1-on-hover);
+}
+
 #equals-button {
   background-color: var(--key2-background);
   color: var(--text2);
   font-size: 1.5rem;
   box-shadow: inset 0px -3px var(--key2-shadow);
+}
+
+#equals-button:hover {
+  background-color: var(--key2-on-hover);
 }
 
 #theme-switcher {
@@ -117,6 +130,11 @@ button {
   padding: 0.8rem 2.5rem;
   border-radius: 1rem;
   position: relative;
+  cursor: pointer;
+}
+
+#toggler-button:hover #circle {
+  background-color: var(--key2-on-hover);
 }
 
 #circle {

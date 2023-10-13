@@ -11,6 +11,9 @@
   --key3-shadow-default: hsl(28, 16%, 65%);
   --text1-default: hsl(221, 14%, 31%);
   --text2-default: hsl(0, 0%, 100%);
+  --key1-on-hover-default: hsl(225, 21%, 59%);
+  --key2-on-hover-default: hsl(6, 63%, 60%);
+  --key3-on-hover-default: hsl(30, 25%, 99%);
 
   /* Light theme */
   --main-background-light: hsl(0, 0%, 90%);
@@ -24,6 +27,9 @@
   --key3-shadow-light: hsl(35, 11%, 61%);
   --text1-light: hsl(60, 10%, 19%);
   --text2-light: hsl(0, 0%, 100%);
+  --key1-on-hover-light: hsl(185, 42%, 47%);
+  --key2-on-hover-light: hsl(25, 98%, 50%);
+  --key3-on-hover-light: hsl(45, 7%, 99%);
 
   /* Dark theme */
   --main-background-dark: hsl(268, 75%, 9%);
@@ -37,6 +43,9 @@
   --key3-shadow-dark: hsl(290, 70%, 36%);
   --text1-dark: hsl(52, 100%, 62%);
   --text2-dark: hsl(0, 0%, 100%);
+  --key1-on-hover-dark: hsl(281, 89%, 36%);
+  --key2-on-hover-dark: hsl(176, 100%, 54%);
+  --key3-on-hover-dark: hsl(268, 47%, 31%);
 }
 
 :root {
@@ -50,8 +59,10 @@
   --key2-shadow: var(--key2-shadow-default);
   --key3-background: var(--key3-background-default);
   --key3-shadow: var(--key3-shadow-default);
-  --text1: var(--text1-default);
-  --text2: var(--text2-default);
+  --key1-on-hover: var(--key1-on-hover-default);
+  --key2-on-hover: var(--key2-on-hover-default);
+  --key3-on-hover: var(--key3-on-hover-default);
+  --screen-text: var(--text2-default);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -68,6 +79,10 @@
     --key3-shadow: var(--key3-shadow-dark);
     --text1: var(--text1-dark);
     --text2: var(--text2-dark);
+    --key1-on-hover: var(--key1-on-hover-dark);
+    --key2-on-hover: var(--key2-on-hover-dark);
+    --key3-on-hover: var(--key3-on-hover-dark);
+    --screen-text: var(--text1-dark);
   }
 }
 
@@ -84,6 +99,10 @@
   --key3-shadow: var(--key3-shadow-default);
   --text1: var(--text1-default);
   --text2: var(--text2-default);
+  --key1-on-hover: var(--key1-on-hover-default);
+  --key2-on-hover: var(--key2-on-hover-default);
+  --key3-on-hover: var(--key3-on-hover-default);
+  --screen-text: var(--text2-default);
 }
 
 [color-scheme="light"] {
@@ -99,6 +118,10 @@
   --key3-shadow: var(--key3-shadow-light);
   --text1: var(--text1-light);
   --text2: var(--text2-light);
+  --key1-on-hover: var(--key1-on-hover-light);
+  --key2-on-hover: var(--key2-on-hover-light);
+  --key3-on-hover: var(--key3-on-hover-light);
+  --screen-text: var(--text1-light);
 }
 
 [color-scheme="dark"] {
@@ -114,4 +137,8 @@
   --key3-shadow: var(--key3-shadow-dark);
   --text1: var(--text1-dark);
   --text2: var(--text2-dark);
+  --key1-on-hover: var(--key1-on-hover-dark);
+  --key2-on-hover: var(--key2-on-hover-dark);
+  --key3-on-hover: var(--key3-on-hover-dark);
+  --screen-text: var(--text1-dark);
 }
