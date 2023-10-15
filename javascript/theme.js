@@ -1,6 +1,7 @@
 const togglerButton = document.querySelector("#toggler-button");
 
-const setTheme = (theme) => document.body.setAttribute("color-scheme", theme);
+const setTheme = (theme) =>
+  document.body.setAttribute("data-color-scheme", theme);
 
 let circlePosition = undefined;
 

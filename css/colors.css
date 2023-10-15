@@ -49,7 +49,7 @@
 }
 
 :root {
-  color-scheme: default;
+  color-scheme: normal;
   --main-background: var(--main-background-default);
   --keypad-background: var(--keypad-background-default);
   --screen-background: var(--screen-background-default);
@@ -90,7 +90,7 @@
   }
 }
 
-[color-scheme="default"] {
+[data-color-scheme="default"] {
   color-scheme: dark;
   --main-background: var(--main-background-default);
   --keypad-background: var(--keypad-background-default);
@@ -111,7 +111,7 @@
   --def-text: var(--text2-default);
 }
 
-[color-scheme="light"] {
+[data-color-scheme="light"] {
   color-scheme: light;
   --main-background: var(--main-background-light);
   --keypad-background: var(--keypad-background-light);
@@ -132,7 +132,7 @@
   --def-text: var(--text1-light);
 }
 
-[color-scheme="dark"] {
+[data-color-scheme="dark"] {
   color-scheme: dark;
   --main-background: var(--main-background-dark);
   --keypad-background: var(--keypad-background-dark);
