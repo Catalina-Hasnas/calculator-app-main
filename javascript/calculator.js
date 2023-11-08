@@ -24,10 +24,6 @@ class Calculator {
   }
 
   delete() {
-    console.log({ curr: this.currentOperand });
-    console.log({ prev: this.previousOperand });
-    console.log({ operator: this.operator });
-
     // delete operator if current operand is already deleted
     if (!this.currentOperand && this.operator) {
       this.operator = "";

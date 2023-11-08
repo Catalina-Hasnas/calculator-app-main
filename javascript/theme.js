@@ -14,22 +14,19 @@ const circlePositionToThemeValueMapper = {
 const mapCirclePositionToThemeValue = () => {
   circlePosition = !circlePosition ? 1 : circlePosition;
 
-  const currentValue = circlePositionToThemeValueMapper[circlePosition].theme;
+  const { theme, leftPosition } =
+    circlePositionToThemeValueMapper[circlePosition];
 
-  const selectedRadio = document.querySelector(
-    `input[type="radio"][value="${currentValue}"]`
-  );
-  const previouslySelectedRadio = document.querySelector(
-    `input[type="radio"][checked=""]`
-  );
-  selectedRadio.setAttribute("checked", "");
-  if (previouslySelectedRadio) {
-    previouslySelectedRadio.removeAttribute("checked");
-  }
+  const nextTheme =
+    circlePosition === 3
+      ? "default"
+      : circlePositionToThemeValueMapper[circlePosition + 1].theme;
+
+  togglerButton.setAttribute("aria-label", `switch to ${nextTheme} theme`);
+
   const circle = document.querySelector("#circle");
-  circle.style.left =
-    circlePositionToThemeValueMapper[circlePosition].leftPosition;
-  setTheme(currentValue);
+  circle.style.left = leftPosition;
+  setTheme(theme);
 };
 
 const onTogglerButtonClick = (event) => {
