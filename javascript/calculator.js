@@ -46,11 +46,8 @@ class Calculator {
 
   updateOperator(operator) {
     if (operator === minus) {
-      if (
-        (!this.currentOperand && !this.previousOperand) ||
-        (!this.currentOperand && this.previousOperand)
-      ) {
-        this.currentOperand = minus + this.currentOperand;
+      if (!this.currentOperand) {
+        this.currentOperand = minus;
         return;
       }
     }
